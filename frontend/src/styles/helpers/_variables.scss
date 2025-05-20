@@ -1,16 +1,19 @@
-//TODO: заменить шрифт на свой
-$mainFont:  'Mulish', sans-serif;
+:root {
+  --font-family: "Geologica Roman", sans-serif;
+  --second-family: "Inter", sans-serif;
+}
 
-/*$inter:"Inter", sans-serif;
-$sfui: "SF UI Display", sans-serif;
-$muller-font: "Muller", sans-serif;
-$montserrat: "Montserrat", sans-serif;*/
+:root {
+  --262626: #262626;
+  --212121: #212121;
+  --fd8a00: #fd8a00;
+  --fff: #fff;
+  --2db96b: #2db96b;
+  --ff3d3d: #ff3d3d;
 
-
-/* media */
-$media-list: (
-    'xs': 480,
-    'sm': 640,
-    'md': 960,
-    'lg': 1200,
-);
+  --text-primary: #083743;
+	--text-link: #149FC2;
+	--text-accent: #18B7DF;
+	--text-secondary: rgba(7, 55, 67, 0.6);
+	--text-muted: rgba(7, 55, 67, 0.4);
+}
