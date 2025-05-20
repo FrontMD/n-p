@@ -1,0 +1,9 @@
+mixin start-item(num, title, descr)
+	li.main-start__list-item
+		.main-start__list-item__top
+			.main-start__list-item__top-number
+				p= num
+			.main-start__list-item__top-title
+				h3= title
+		.main-start__list-item__descr
+			p!= descr

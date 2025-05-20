@@ -1,0 +1,9 @@
+mixin why-item(icon, title, text)
+  li.main-why__list-item
+    .main-why__list-item__top
+      .main-why__list-item__top-icon
+        img(src=`${icon}` alt="icon")
+      .main-why__list-item__top-title
+        h3= title
+    .main-why__list-item__descr
+      p!= text

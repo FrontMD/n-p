@@ -1,0 +1,151 @@
+.main-start {
+  padding-top: 80px;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    max-width: 1238px;
+    margin: 0 auto;
+
+    &-blocks {
+
+      & .main-start__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 32px;
+
+        &-item {
+          padding: 0 32px;
+          min-height: 145px;
+
+          &__top {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 16px;
+
+            &-number {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              padding: 2px;
+
+              min-width: 48px;
+              height: 48px;
+
+              border-radius: 100%;
+              background-color: #effafd;
+            }
+
+            &-title {
+
+              & * {
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 135%;
+                letter-spacing: -0.01em;
+                color: var(--text-primary);
+              }
+            }
+          }
+
+          &__descr {
+            font-weight: 200;
+            font-size: 18px;
+            line-height: 150%;
+            color: var(--text-primary);
+          }
+        }
+      }
+    }
+
+    &-btn {
+      width: 100%;
+      max-width: 352px;
+    }
+  }
+}
+
+@media (max-width: 1365px) {
+  .main-start {
+    padding-top: 64px;
+
+    &__content {
+
+      &-blocks {
+
+        & .main-start__list {
+
+          &-item {
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .main-start {
+    padding-top: 48px;
+
+    &__content {
+      gap: 32px;
+
+      &-blocks {
+
+        & .main-start__list {
+          display: flex;
+          flex-direction: column;
+          gap: 32px;
+
+          &-item {
+            min-height: auto;
+
+            &__descr {
+              padding-right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .main-start {
+    padding-top: 32px;
+
+    &__content {
+      gap: 24px;
+
+      &-title {
+        padding-right: 5px;
+      }
+
+      &-blocks {
+
+        & .main-start__list {
+          gap: 23px;
+
+          &-item {
+
+            &__top {
+              gap: 12px;
+              margin-bottom: 9px;
+
+              &-title {
+
+                & * {
+                  font-size: 16px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

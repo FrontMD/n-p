@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Главная</title>
+    <title>index</title>
     <meta name="theme-color" content="#fff">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -23,18 +23,230 @@
     <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
     <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
-    <link rel="stylesheet" href="styles/main.min.css">
+    <link rel="stylesheet" href="styles/main.css">
   </head>
   <body>
-    <header class="site-header"> header</header>
-    <main class="site-main">
-    </main>
-    <footer class="site-footer"> footer</footer>
-    <noindex>
-      <div style="display:none;">
-        <!--код модалок сюда-->
+    <!-- Header-->
+    <header class="header">
+      <div class="container">
+        <div class="header__content">
+          <div class="header__content-logo"><a class="header__content-logo__link" href="#"><img src="./img/header/logo.png" alt="logo"></a></div>
+          <div class="header__content-nav">
+            <nav class="header-nav">
+              <ul>
+                <li><a href="#">О проекте</a></li>
+                <li><a href="#">Правовая информация</a></li>
+                <li><a href="#">Партнеры</a></li>
+                <li><a href="#">Тарифы</a></li>
+                <li><a href="#">Помощь</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__content-right">
+            <div class="header__content-right__language">
+              <button class="header__content-right__language-btn"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.8016 6.4C1.66721 6.9227 1.59947 7.4603 1.6 8C1.6 8.552 1.6704 9.088 1.8016 9.6H4.08C3.97307 8.53601 3.97307 7.46399 4.08 6.4H1.8016ZM2.456 4.8H4.3328C4.5456 3.8264 4.8528 2.9544 5.2296 2.2288C4.06828 2.78854 3.10197 3.68434 2.456 4.8ZM14.1984 6.4H11.92C12.0269 7.46399 12.0269 8.53601 11.92 9.6H14.1984C14.4676 8.55032 14.4676 7.44968 14.1984 6.4ZM13.544 4.8C12.898 3.68434 11.9317 2.78854 10.7704 2.2288C11.148 2.9544 11.4544 3.8264 11.6672 4.8H13.544ZM5.6896 6.4C5.63006 6.93126 5.60014 7.46542 5.6 8C5.6 8.548 5.6304 9.084 5.6896 9.6H10.3104C10.4306 8.53672 10.4306 7.46328 10.3104 6.4H5.6896ZM5.976 4.8H10.024C9.87816 4.19871 9.66816 3.61483 9.3976 3.0584C8.8952 2.0544 8.3576 1.6 8 1.6C7.6424 1.6 7.1048 2.0544 6.6024 3.0584C6.3504 3.564 6.1384 4.152 5.976 4.8ZM2.456 11.2C3.10197 12.3157 4.06828 13.2115 5.2296 13.7712C4.852 13.0456 4.5456 12.1736 4.3328 11.2H2.456ZM13.544 11.2H11.6672C11.4544 12.1736 11.1472 13.0456 10.7704 13.7712C11.9317 13.2115 12.898 12.3157 13.544 11.2ZM5.976 11.2C6.1384 11.848 6.3504 12.436 6.6024 12.9416C7.1048 13.9456 7.6424 14.4 8 14.4C8.3576 14.4 8.8952 13.9456 9.3976 12.9416C9.6496 12.436 9.8616 11.848 10.024 11.2H5.976ZM8 16C3.5816 16 0 12.4184 0 8C0 3.5816 3.5816 0 8 0C12.4184 0 16 3.5816 16 8C16 12.4184 12.4184 16 8 16Z" fill="#18B7DF" />
+</svg>
+                <p class="desctop">Қазақша</p>
+                <p class="mobile">Қз</p>
+              </button>
+            </div>
+            <div class="header__content-right__search">
+              <button class="header__content-right__search-btn"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.5 0C10.0899 0 13 2.91015 13 6.5C13 7.93401 12.5336 9.25809 11.7471 10.333L15.707 14.293C16.0976 14.6835 16.0976 15.3165 15.707 15.707C15.3165 16.0976 14.6835 16.0976 14.293 15.707L10.333 11.7471C9.25809 12.5336 7.93401 13 6.5 13C2.91015 13 0 10.0899 0 6.5C0 2.91015 2.91015 0 6.5 0ZM6.5 2C4.01472 2 2 4.01472 2 6.5C2 8.98528 4.01472 11 6.5 11C8.98528 11 11 8.98528 11 6.5C11 4.01472 8.98528 2 6.5 2Z" fill="#18B7DF" />
+</svg>
+              </button>
+            </div>
+            <div class="header__content-right__menuOpen">
+              <button class="header__content-right__menuOpen-btn" id="menuNavigationOpenBtn"><span></span><span></span><span></span></button>
+            </div>
+          </div>
+        </div>
       </div>
-    </noindex>
-    <script src="js/main.min.js"></script>
+    </header>
+    <!-- Основной контент страницы-->
+    <main>
+      <section class="index-page">
+        <div class="container">
+          <div class="index-page__content">
+            <ul>
+              <li><a href="/main.html">main</a></li>
+              <li><a href="/about.html">about</a></li>
+              <li><a href="/main">documents</a></li>
+              <li><a href="/main">help</a></li>
+              <li><a href="/main">contacts</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer-->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__content-info">
+            <div class="footer__content-info__nav">
+              <nav class="footer-nav">
+                <ul>
+                  <li><a href="#">О проекте</a></li>
+                  <li><a href="#">Правовая информация</a></li>
+                  <li><a href="#">Партнеры</a></li>
+                  <li><a href="#">Тарифы</a></li>
+                  <li><a href="#">Помощь</a></li>
+                  <li><a href="#">Контакты</a></li>
+                  <li><a href="#">Написать нам</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer__content-info__descr">
+              <p> © ТОО «Nomapay»</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="mobile-navigation" id="mobileNavigation">
+      <div class="mobile-navigation__content">
+        <div class="mobile-navigation__content-top">
+          <div class="mobile-navigation__content-top__logo"><a class="mobile-navigation__content-top__logo-link" href="#"><img src="./img/header/logo.png" alt="logo"></a></div>
+          <div class="mobile-navigation__content-top__menuClose">
+            <button class="mobile-navigation__content-top__menuClose-btn" id="menuNavigationCloseBtn">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.2919 0.293274C14.6824 -0.0971786 15.3164 -0.0970354 15.707 0.293274C16.097 0.683719 16.0971 1.3169 15.707 1.70734L9.41399 8.00031L15.707 14.2933L15.7763 14.3694C16.096 14.7621 16.0727 15.3414 15.707 15.7073C15.3408 16.0732 14.7608 16.0961 14.3681 15.7757L14.2929 15.7073L7.99993 9.41437L1.70696 15.7073C1.31655 16.0977 0.683427 16.0975 0.292901 15.7073C-0.0973841 15.3168 -0.0974761 14.6837 0.292901 14.2933L6.58489 7.99933L0.292901 1.70734C-0.0975056 1.31692 -0.0973017 0.68382 0.292901 0.293274C0.683423 -0.0969904 1.31651 -0.0971057 1.70696 0.293274L7.99896 6.58527L14.2919 0.293274Z" fill="#18B7DF"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="mobile-navigation__content-bottom">
+          <ul class="navigation__list" id="navigationList">
+                <li class="navigation__list-item"><a href="#">О проекте</a>
+                  <ul class="submenu">
+                        <li class="navigation__list-item"><a href="https://example.com">Подподпункт 1</a>
+                        </li>
+                        <li class="navigation__list-item"><a href="#">Подподпункт 2 с подменю</a>
+                          <ul class="submenu">
+                                <li class="navigation__list-item"><a href="https://example.com">Глубокий подпункт 1</a>
+                                </li>
+                                <li class="navigation__list-item"><a href="https://example.com">Глубокий подпункт 2</a>
+                                </li>
+                          </ul>
+                        </li>
+                  </ul>
+                </li>
+                <li class="navigation__list-item"><a href="#">Правовая информация</a>
+                  <ul class="submenu">
+                        <li class="navigation__list-item"><a href="https://example.com">Подподпункт 1</a>
+                        </li>
+                        <li class="navigation__list-item"><a href="https://example.com">Подподпункт 2</a>
+                        </li>
+                        <li class="navigation__list-item"><a href="#">Подподпункт 3 с подменю</a>
+                          <ul class="submenu">
+                                <li class="navigation__list-item"><a href="https://example.com">Глубокий подпункт 1</a>
+                                </li>
+                                <li class="navigation__list-item"><a href="https://example.com">Глубокий подпункт 2</a>
+                                </li>
+                          </ul>
+                        </li>
+                        <li class="navigation__list-item"><a href="#">Подподпункт 4 с подменю</a>
+                          <ul class="submenu">
+                                <li class="navigation__list-item"><a href="https://example.com">Глубокий подпункт 1</a>
+                                </li>
+                                <li class="navigation__list-item"><a href="https://example.com">Глубокий подпункт 2</a>
+                                </li>
+                          </ul>
+                        </li>
+                  </ul>
+                </li>
+                <li class="navigation__list-item"><a href="#">Партнеры</a>
+                  <ul class="submenu">
+                        <li class="navigation__list-item"><a href="https://example.com">Подподпункт 1</a>
+                        </li>
+                        <li class="navigation__list-item"><a href="https://example.com">Подподпункт 2</a>
+                        </li>
+                        <li class="navigation__list-item"><a href="#">Подподпункт 3 с подменю</a>
+                          <ul class="submenu">
+                                <li class="navigation__list-item"><a href="https://example.com">Глубокий подпункт 1</a>
+                                </li>
+                                <li class="navigation__list-item"><a href="https://example.com">Глубокий подпункт 2</a>
+                                </li>
+                          </ul>
+                        </li>
+                        <li class="navigation__list-item"><a href="#">Подподпункт 4 с подменю</a>
+                          <ul class="submenu">
+                                <li class="navigation__list-item"><a href="https://example.com">Глубокий подпункт 1</a>
+                                </li>
+                                <li class="navigation__list-item"><a href="https://example.com">Глубокий подпункт 2</a>
+                                </li>
+                          </ul>
+                        </li>
+                  </ul>
+                </li>
+                <li class="navigation__list-item"><a href="#">Тарифы</a>
+                  <ul class="submenu">
+                        <li class="navigation__list-item"><a href="https://example.com">Подподпункт 1</a>
+                        </li>
+                        <li class="navigation__list-item"><a href="https://example.com">Подподпункт 2</a>
+                        </li>
+                        <li class="navigation__list-item"><a href="#">Подподпункт 3 с подменю</a>
+                          <ul class="submenu">
+                                <li class="navigation__list-item"><a href="https://example.com">Глубокий подпункт 1</a>
+                                </li>
+                                <li class="navigation__list-item"><a href="https://example.com">Глубокий подпункт 2</a>
+                                </li>
+                          </ul>
+                        </li>
+                        <li class="navigation__list-item"><a href="#">Подподпункт 4 с подменю</a>
+                          <ul class="submenu">
+                                <li class="navigation__list-item"><a href="https://example.com">Глубокий подпункт 1</a>
+                                </li>
+                                <li class="navigation__list-item"><a href="https://example.com">Глубокий подпункт 2</a>
+                                </li>
+                          </ul>
+                        </li>
+                  </ul>
+                </li>
+                <li class="navigation__list-item"><a href="#">Помощь</a>
+                  <ul class="submenu">
+                        <li class="navigation__list-item"><a href="https://example.com">Как начать делать ставки?</a>
+                        </li>
+                        <li class="navigation__list-item"><a href="https://example.com">Как пройти идентификацию?</a>
+                        </li>
+                        <li class="navigation__list-item"><a href="https://example.com">Как пополнять и выводить?</a>
+                        </li>
+                        <li class="navigation__list-item"><a href="https://example.com">Что такое ЕСУ и зачем он нужен?</a>
+                        </li>
+                        <li class="navigation__list-item"><a href="#">Не приходит СМС</a>
+                          <ul class="submenu">
+                                <li class="navigation__list-item"><a href="https://example.com">Если номер телефона из аккаунта недоступен</a>
+                                </li>
+                                <li class="navigation__list-item"><a href="#">Если нет доступа к старому номеру</a>
+                                  <ul class="submenu">
+                                        <li class="navigation__list-item"><a href="https://example.com">Глубокий подпункт 1</a>
+                                        </li>
+                                        <li class="navigation__list-item"><a href="https://example.com">Глубокий подпункт 2</a>
+                                        </li>
+                                  </ul>
+                                </li>
+                                <li class="navigation__list-item"><a href="https://example.com">Если на стороне оператора все в порядке</a>
+                                </li>
+                          </ul>
+                        </li>
+                        <li class="navigation__list-item"><a href="https://example.com">Как привязать и отвязать карту?</a>
+                        </li>
+                        <li class="navigation__list-item"><a href="https://example.com">Проблемы с платежами</a>
+                        </li>
+                        <li class="navigation__list-item"><a href="https://example.com">Безопасность</a>
+                        </li>
+                  </ul>
+                </li>
+                <li class="navigation__list-item"><a href="#">Контакты</a>
+                </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

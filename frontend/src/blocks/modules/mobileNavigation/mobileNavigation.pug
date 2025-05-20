@@ -1,0 +1,65 @@
+.mobile-navigation#mobileNavigation
+	.mobile-navigation__content
+		.mobile-navigation__content-top
+			.mobile-navigation__content-top__logo
+				a.mobile-navigation__content-top__logo-link(href="#")
+					img(src="./img/header/logo.png" alt="logo")
+			.mobile-navigation__content-top__menuClose
+				button.mobile-navigation__content-top__menuClose-btn#menuNavigationCloseBtn
+					svg(width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+						path(d="M14.2919 0.293274C14.6824 -0.0971786 15.3164 -0.0970354 15.707 0.293274C16.097 0.683719 16.0971 1.3169 15.707 1.70734L9.41399 8.00031L15.707 14.2933L15.7763 14.3694C16.096 14.7621 16.0727 15.3414 15.707 15.7073C15.3408 16.0732 14.7608 16.0961 14.3681 15.7757L14.2929 15.7073L7.99993 9.41437L1.70696 15.7073C1.31655 16.0977 0.683427 16.0975 0.292901 15.7073C-0.0973841 15.3168 -0.0974761 14.6837 0.292901 14.2933L6.58489 7.99933L0.292901 1.70734C-0.0975056 1.31692 -0.0973017 0.68382 0.292901 0.293274C0.683423 -0.0969904 1.31651 -0.0971057 1.70696 0.293274L7.99896 6.58527L14.2919 0.293274Z" fill="#18B7DF")
+
+		.mobile-navigation__content-bottom
+			ul.navigation__list#navigationList
+				+navigation-item("О проекте")
+					+navigation-item("Подподпункт 1", "https://example.com")
+					+navigation-item("Подподпункт 2 с подменю")
+						+navigation-item("Глубокий подпункт 1", "https://example.com")
+						+navigation-item("Глубокий подпункт 2", "https://example.com")
+
+				+navigation-item("Правовая информация")
+					+navigation-item("Подподпункт 1", "https://example.com")
+					+navigation-item("Подподпункт 2", "https://example.com")
+					+navigation-item("Подподпункт 3 с подменю")
+						+navigation-item("Глубокий подпункт 1", "https://example.com")
+						+navigation-item("Глубокий подпункт 2", "https://example.com")
+					+navigation-item("Подподпункт 4 с подменю")
+						+navigation-item("Глубокий подпункт 1", "https://example.com")
+						+navigation-item("Глубокий подпункт 2", "https://example.com")
+
+				+navigation-item("Партнеры")
+					+navigation-item("Подподпункт 1", "https://example.com")
+					+navigation-item("Подподпункт 2", "https://example.com")
+					+navigation-item("Подподпункт 3 с подменю")
+						+navigation-item("Глубокий подпункт 1", "https://example.com")
+						+navigation-item("Глубокий подпункт 2", "https://example.com")
+					+navigation-item("Подподпункт 4 с подменю")
+						+navigation-item("Глубокий подпункт 1", "https://example.com")
+						+navigation-item("Глубокий подпункт 2", "https://example.com")
+
+				+navigation-item("Тарифы")
+					+navigation-item("Подподпункт 1", "https://example.com")
+					+navigation-item("Подподпункт 2", "https://example.com")
+					+navigation-item("Подподпункт 3 с подменю")
+						+navigation-item("Глубокий подпункт 1", "https://example.com")
+						+navigation-item("Глубокий подпункт 2", "https://example.com")
+					+navigation-item("Подподпункт 4 с подменю")
+						+navigation-item("Глубокий подпункт 1", "https://example.com")
+						+navigation-item("Глубокий подпункт 2", "https://example.com")
+
+				+navigation-item("Помощь")
+					+navigation-item("Как начать делать ставки?", "https://example.com")
+					+navigation-item("Как пройти идентификацию?", "https://example.com")
+					+navigation-item("Как пополнять и выводить?", "https://example.com")
+					+navigation-item("Что такое ЕСУ и зачем он нужен?", "https://example.com")
+					+navigation-item("Не приходит СМС")
+						+navigation-item("Если номер телефона из аккаунта недоступен", "https://example.com")
+						+navigation-item("Если нет доступа к старому номеру")
+							+navigation-item("Глубокий подпункт 1", "https://example.com")
+							+navigation-item("Глубокий подпункт 2", "https://example.com")
+						+navigation-item("Если на стороне оператора все в порядке", "https://example.com")
+					+navigation-item("Как привязать и отвязать карту?", "https://example.com")
+					+navigation-item("Проблемы с платежами", "https://example.com")
+					+navigation-item("Безопасность", "https://example.com")
+
+				+navigation-item("Контакты")

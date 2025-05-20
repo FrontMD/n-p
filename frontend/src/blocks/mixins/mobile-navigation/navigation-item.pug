@@ -1,0 +1,6 @@
+mixin navigation-item(text, url="#")
+  li.navigation__list-item
+    a(href=url)= text
+    if block
+      ul.submenu
+        block
