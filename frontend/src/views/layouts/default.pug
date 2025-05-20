@@ -26,18 +26,20 @@ html(lang="ru")
 		link(rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png")
 		link(rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png")
 		link(rel="stylesheet" href="styles/main.css")
-
-
 	body
-		block header
-			include ../../blocks/modules/header/header
+		include ../helpers/mixins
+		+mixins()
+		// Header
+		include ../../blocks/modules/header/header
+		// Основной контент страницы
+		main
+			block block-content
+		// Footer
+		include ../../blocks/modules/footer/footer
 
-		main.site-main
-			block content
-		block footer
-			include ../../blocks/modules/footer/footer
-
-		include ../../blocks/modules/modals/modals
+		include ../../blocks/modules/mobileNavigation/mobileNavigation
 
 		block scripts
+			script(src="js/vendor.js")
 			script(src="js/main.js")
+
