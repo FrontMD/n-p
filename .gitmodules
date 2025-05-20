@@ -1,0 +1,3 @@
+[submodule "gulp-pug-starter"]
+	path = gulp-pug-starter
+	url = https://github.com/FrontMD/n-p
