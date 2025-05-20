@@ -9,11 +9,51 @@
 // Основное
 @import "base/fonts";
 @import "base/general";
-@import "base/modals";
-
-
+@import "base/reset";
+@import "base/untils";
+@import "base/globals";
 
 // БЭМ-блоки
 @import "../blocks/modules/modules";
-//главная
-@import "base/front-page";
+
+.index-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex: 1;
+
+  &__content {
+
+    & ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+
+      & li {
+
+        & a {
+          white-space: nowrap;
+          padding: 4px;
+          border-radius: 8px;
+
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 150%;
+          letter-spacing: -0.02em;
+          color: var(--text-primary);
+
+          &:hover {
+            color: var(--text-accent);
+            background-color: #f1fbfd;
+          }
+
+          &.active {
+            color: var(--text-accent);
+          }
+        }
+      }
+    }
+  }
+}
