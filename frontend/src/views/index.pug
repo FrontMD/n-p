@@ -2,6 +2,20 @@ extends layouts/default
 include helpers/mixins
 
 block variables
-	- const title = "Главная"
+	- const title = "index"
 
-block content
+block block-content
+	section.index-page
+		.container
+			.index-page__content
+				ul
+					li
+						a(href="/main.html") main
+					li
+						a(href="/about.html") about
+					li
+						a(href="/main") documents
+					li
+						a(href="/main") help
+					li
+						a(href="/main") contacts
