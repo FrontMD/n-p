@@ -7,18 +7,12 @@ header.header
 			.header__content-nav
 				nav.header-nav
 					ul
-						li
-							a(href="#") О проекте
-						li
-							a(href="#") Правовая информация
-						li
-							a(href="#") Партнеры
-						li
-							a(href="#") Тарифы
-						li
-							a(href="#") Помощь
-						li
-							a(href="#") Контакты
+						+nav-item("./about.html", "about", activePage) О проекте
+						+nav-item("./documents.html", "documents", activePage) Правовая информация
+						+nav-item("/partners.html", "partners", activePage) Партнеры
+						+nav-item("./rates.html", "rates", activePage) Тарифы
+						+nav-item("./help.html", "help", activePage) Помощь
+						+nav-item("./contacts.html", "contacts", activePage) Контакты
 			.header__content-right
 				.header__content-right__language
 					button.header__content-right__language-btn

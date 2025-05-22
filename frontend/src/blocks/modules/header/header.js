@@ -8,13 +8,31 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   function setMainPadding() {
-      const headerHeight = header.offsetHeight;
-      main.style.paddingTop = `${headerHeight}px`;
+    const headerHeight = header.offsetHeight;
+    main.style.paddingTop = `${headerHeight}px`;
   }
 
+  // Инициализация
   setMainPadding();
 
-  window.addEventListener('resize', setMainPadding);
+  // Отслеживание изменений размеров через ResizeObserver
+  const resizeObserver = new ResizeObserver(setMainPadding);
+  resizeObserver.observe(header);
+
+  // Отслеживание изменений в DOM (если header динамически меняется)
+  const mutationObserver = new MutationObserver(setMainPadding);
+  mutationObserver.observe(header, {
+    childList: true,       // отслеживание добавления/удаления дочерних элементов
+    subtree: true,         // отслеживание изменений во всём поддереве
+    attributes: true,      // отслеживание изменений атрибутов
+    characterData: true    // отслеживание текстовых изменений
+  });
+
+  // Очистка при размонтировании
+  window.addEventListener('unload', () => {
+    resizeObserver.disconnect();
+    mutationObserver.disconnect();
+  });
 });
 
 document.addEventListener('DOMContentLoaded', function() {

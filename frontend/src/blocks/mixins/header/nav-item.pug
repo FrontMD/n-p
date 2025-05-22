@@ -1,0 +1,4 @@
+mixin nav-item(href, pageName, activePage)
+  li(class=activePage === pageName ? 'active' : '')
+    a(href=href)&attributes(attributes)
+      block

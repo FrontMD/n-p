@@ -29,8 +29,20 @@
     &__content {
 
       &-info {
-        grid-template-columns: auto 289px;
+        grid-template-columns: auto 46.7%;
         padding: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .main-about {
+
+    &__content {
+
+      &-info {
+        grid-template-columns: auto 31%;
       }
     }
   }

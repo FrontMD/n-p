@@ -68,10 +68,6 @@
 
     &__content {
 
-      &-descr {
-        max-width: 880px;
-      }
-
       &-blocks {
 
         & .main-purpose__list {
@@ -85,6 +81,18 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .main-purpose {
+
+    &__content {
+
+      &-descr {
+        max-width: 800px;
+      }
+    }
+  }
+}
+
 @media (max-width: 1023px) {
   .main-purpose {
     padding-top: 48px;
@@ -93,8 +101,6 @@
       gap: 32px;
 
       &-descr {
-        max-width: 660px;
-
         letter-spacing: -.01em;
       }
 
@@ -145,7 +151,7 @@
 
           &-item {
             padding: 24px 16px;
-            min-height: 166px;
+            min-height: auto;
 
             &__icon {
               padding: 8px;

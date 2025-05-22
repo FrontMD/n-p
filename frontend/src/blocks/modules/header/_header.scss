@@ -51,8 +51,11 @@
                 color: var(--text-accent);
                 background-color: #f1fbfd;
               }
+            }
 
-              &.active {
+            &.active {
+
+              & a {
                 color: var(--text-accent);
               }
             }
@@ -81,7 +84,7 @@
       margin-left: auto;
 
       &__language {
-        margin-right: 25px;
+        margin-right: 29px;
 
         &-btn {
           display: flex;
@@ -137,6 +140,10 @@
   .header {
     padding: 37px 0;
 
+    & .container {
+      max-width: 100%;
+    }
+
     &__content {
 
       &-logo {
@@ -148,7 +155,7 @@
         & .header-nav {
 
           & ul {
-              gap: 9px;
+              gap: 8.8px;
 
             & li {
 

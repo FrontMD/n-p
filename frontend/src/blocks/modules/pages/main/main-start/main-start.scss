@@ -95,6 +95,7 @@
       gap: 32px;
 
       &-blocks {
+        width: 100%;
 
         & .main-start__list {
           display: flex;
@@ -145,6 +146,10 @@
             }
           }
         }
+      }
+
+      &-btn {
+        max-width: 100%;
       }
     }
   }

@@ -76,6 +76,10 @@
   .main-why {
     padding-top: 64px;
 
+    & .container {
+      max-width: 100%;
+    }
+
     &__content {
       padding: 64px 47px;
 
@@ -97,7 +101,7 @@
     padding-top: 48px;
 
     &__content {
-      padding: 48px 40px;
+      padding: 48px 44px;
 
       &-info {
         gap: 32px;
@@ -122,6 +126,15 @@
   }
 }
 
+@media (max-width: 768px) {
+  .main-why {
+
+    &__content {
+      padding: 48px 40px;
+    }
+  }
+}
+
 @media (max-width: 767px) {
   .main-why {
     padding-top: 32px;
@@ -131,6 +144,7 @@
       border-radius: 16px;
 
       &-info {
+        max-width: 520px;
         gap: 24px;
 
         &__blocks {
@@ -153,6 +167,10 @@
               }
             }
           }
+        }
+
+        &__btn {
+          max-width: 100%;
         }
       }
     }

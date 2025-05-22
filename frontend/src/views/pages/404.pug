@@ -1,0 +1,9 @@
+extends ../layouts/default
+
+block variables
+	- const title = "404"
+	- const activePage = 'error'
+	- let showHeaderFooter = false
+
+block block-content
+	include ../../blocks/modules/pages/error/error-hero/error-hero.pug
