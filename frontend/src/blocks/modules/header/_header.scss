@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: 38px 0;
+  padding: 28px 0;
   background-color: #fff;
   z-index: 50;
   transition: all 0.3s ease-in-out;
@@ -138,7 +138,6 @@
 @media (max-width: 1365px) {
 
   .header {
-    padding: 37px 0;
 
     & .container {
       max-width: 100%;
@@ -194,7 +193,7 @@
 @media (max-width: 1023px) {
 
   .header {
-    padding: 30px 0;
+    padding: 17px 0;
 
 
     &__content {
@@ -254,7 +253,4 @@
 
 @media (max-width: 767px) {
 
-  .header {
-    padding: 27px 0;
-  }
 }

@@ -1,0 +1,6 @@
+mixin menu-item(text, url="#", isActive=false)
+  li.menu__list-item(class=isActive ? 'active' : '')
+    a(href=url)= text
+    if block
+      ul.submenu
+        block

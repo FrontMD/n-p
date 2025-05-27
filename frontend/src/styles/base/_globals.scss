@@ -175,6 +175,17 @@ textarea {
   }
 }
 
+.padding-top {
+  padding-top: 64px;
+}
+
+@media (max-width: 1365px) {
+
+  .padding-top {
+    padding-top: 48px;
+  }
+}
+
 @media (max-width: 1023px) {
 
   .section-title {
@@ -182,6 +193,10 @@ textarea {
     & * {
       letter-spacing: -.04em;
     }
+  }
+
+  .padding-top {
+    padding-top: 48px;
   }
 }
 
@@ -194,5 +209,9 @@ textarea {
       letter-spacing: -.03em;
       font-size: 24px;
     }
+  }
+
+  .padding-top {
+    padding-top: 32px;
   }
 }

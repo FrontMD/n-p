@@ -1,0 +1,64 @@
+.help-hero {
+
+  &__content {
+    display: grid;
+    grid-template-columns: 288px auto;
+
+    &-menu {
+      padding-right: 10px;
+    }
+
+    &-info {
+      padding-left: 63px;
+    }
+  }
+}
+
+@media (max-width: 1365px) {
+
+  .help-hero {
+
+    &__content {
+
+      &-menu {
+        padding-right: 15px;
+      }
+
+      &-info {
+        padding-left: 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+
+  .help-hero {
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+
+      &-menu {
+        display: none;
+      }
+
+      &-info {
+        padding-left: 0px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+
+  .help-hero {
+
+    &__content {
+
+      &-info {
+        padding-left: 0px;
+      }
+    }
+  }
+}

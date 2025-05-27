@@ -1,0 +1,10 @@
+mixin download-item(title, links)
+  li.download__list-item
+    .download__list-item__top
+      .download__list-item__top-title
+        h4!= title
+    .download__list-item__bottom
+      ul
+        each link in links
+          li
+            a(href="#" download)!= link

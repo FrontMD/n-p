@@ -1,0 +1,12 @@
+mixin rates-item(icon, alt, title1, descr1, title2, descr2)
+  li.rates__list-item
+    .rates__list-item__img
+      img(src=icon, alt=alt)
+    .rates__list-item__info
+      .rates__list-item__info-descr
+        h4= title1
+        p!= descr1
+      if title2 && descr2
+        .rates__list-item__info-descr
+          h4= title2
+          p!= descr2

@@ -1,0 +1,11 @@
+mixin partners-item(iconPrev, iconMain, title, description)
+  li.partenrs__list-item
+    .partenrs__list-item__top
+      .partenrs__list-item__top-icon
+        img(src=iconPrev, alt="")
+      h4= title
+    .partenrs__list-item__bottom
+      .partenrs__list-item__bottom-img
+        img(src=iconMain, alt="")
+      .partenrs__list-item__bottom-descr
+        p= description
